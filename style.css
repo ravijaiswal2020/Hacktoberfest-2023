@@ -1,0 +1,29 @@
+*
+{
+	background-color: #181f21;
+	margin: 0;
+	padding: 0; 
+}
+
+h1 
+{
+	font-family: 'JetBrains Mono';
+	text-align: center;
+	color: aqua;
+}
+
+p
+{
+	font-family: 'JetBrains Mono';
+	font-size: 20px;
+	font-weight: bolder;
+	text-align: center;
+	color: antiquewhite;
+	margin-top: 10px;
+}
+
+.photo
+{
+	height: 50px;
+	padding: 40px 820px;
+}
