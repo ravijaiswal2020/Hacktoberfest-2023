@@ -4,7 +4,10 @@
 	margin: 0;
 	padding: 0; 
 }
-
+.container{
+    height: 50vh;
+    width:100%;
+}
 h1 
 {
 	font-family: 'JetBrains Mono';
@@ -20,19 +23,24 @@ p
 	text-align: center;
 	color: antiquewhite;
 	margin-top: 10px;
+    margin-bottom: 20px;
+
 }
 .photo {
     height: 50px;
-    margin: 0 auto; 
+    margin: 5px auto; 
     text-align: center;
+    padding: 20px 10px;
     transition: transform 0.3s; 
+    width:100px;
 }
 
 .photo:hover {
     transform: scale(1.1); 
 }
-
-
+.photo img{
+    border:2px solid aqua;
+}
 
 .cesa{
 	padding-left: 40%;
@@ -42,21 +50,23 @@ p
 }
 
 header {
-    background-color: #333;
+    background-color: #000;
     padding: 15px 0;
 	margin-bottom:21px ;
 }
 
 .navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
     list-style-type: none;
     margin: 0;
     padding: 0;
-    text-align: right;
-    background-color: #333; 
+    text-align: right; 
+    background-color: #000;
 }
 
 .navbar li {
-    display: inline;
     margin-right: 10px;
 }
 
@@ -65,11 +75,53 @@ header {
     color: #fff;
     font-weight: bold;
     padding: 10px 20px;
-    border-radius: 5px;
-    transition: background-color 0.3s, color 0.3s;
+    /* background-color: #c8d1d3; */
+    /* transition: background-color 0.3s, color 0.3s; */
 }
 
 .navbar li a:hover {
-    background-color: #fff;
-    color: #00bfff;
+    background-color: #7fbacb;
+    color: rgb(70, 73, 218);
+    border-radius: 7px;
+}
+.ready{
+    margin-top: 4rem;
+    display: flex;
+    /* justify-content: center; */
+    /* align-items: center; */
+    height:100vh;
+    width:100%;
+    margin:1rem 1rem;
+    /* background-color: red; */
+} 
+.right-col{
+    flex-basis: 50%;
+    
+}
+.right-col img{
+    display: block;
+    /* padding-left: 20px; */
+    align-items: center;
+    height:400px;
+    width:500px;
+}
+.left-col h1{
+    font-size: 50px;
+    font-weight:600;
+    padding-top: 25px;
+    padding-left: 40px;
+}
+.left-col h3{
+    color:aquamarine;
+    padding-top: 25px;
+    padding-left: 300px;
+    font-size: 25px;
+    font-weight: 300;
+ 
+    padding-bottom: 14px;
+    letter-spacing: 2px;
+}
+.left-col p{
+    padding: 30px 30px;
+    justify-content: start;
 }
