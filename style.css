@@ -35,8 +35,10 @@ p
     width:100px;
 }
 
+
 .photo:hover {
     transform: scale(1.1); 
+    
 }
 .photo img{
     border:2px solid aqua;
